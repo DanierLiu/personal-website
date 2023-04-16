@@ -1,0 +1,50 @@
+/* Padding is the same between inline elements and block elements */
+
+h1 {
+    color: orange;
+    background-color: violet;
+    font-size: 60px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+p {
+    color: slateblue;
+    text-align: left;
+    line-height: 30px;
+    letter-spacing: 2px;
+    column-count: 3;
+    column-gap: 60px;
+}
+
+ul {
+    /* border-width: 4px;
+    border-style: solid;
+    border-color: crimson; */
+    /* border: 4px solid crimson; */
+    border-bottom: 4px solid crimson;
+    border-left: 8px dashed crimson;
+    border-top: 4px dotted crimson;
+}
+
+li {
+    list-style-type: none;
+    /* text-shadow: 2px 2px lightgray; */
+    text-shadow: 2px 2px #E9E9E9
+}
+
+/* Need to watch out with inline elements since padding on top and bottom merges or collapses with each other vertically */
+span {
+    display: inline-block;
+    margin: 20px;
+    padding:20px;
+}
+
+/* Similar to above, with block elements, but margin on top  and bottom merges or collapses with each other vertically */
+div {
+    /* display: inline; */
+    border: 2px solid crimson;
+    margin: 20px;
+    padding: 20px;
+}
