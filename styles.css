@@ -48,3 +48,21 @@ div {
     margin: 20px;
     padding: 20px;
 }
+
+p.error {
+    color: red;
+}
+
+p.success {
+    color: #2af82a;
+}
+
+p.success.feedback {
+    border: 1px dashed #2af82a;
+    color: blue;
+}
+
+#content {
+    background-color: #ebebeb;
+    padding: 20px;
+}
