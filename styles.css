@@ -120,3 +120,7 @@ p{
     margin: inherit;
     color: crimson;
 } */
+
+/* ones further down take prescedence so if there were a p tag at the top and a p tag at the bottom, the style would be what
+is specified in the bottom p tag. however, specificity takes prescedence above the others. so if there is a div tag, then a div p tag,
+and finally a p tag, the p within the div would get the div p tag specified style. */
