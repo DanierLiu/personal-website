@@ -62,7 +62,61 @@ p.success.feedback {
     color: blue;
 }
 
+/* ID's must be unique, so it only styles one part of the page. */
 #content {
     background-color: #ebebeb;
     padding: 20px;
 }
+
+/* Descendant selector */
+div p{
+    color: purple
+}
+
+div .error{
+    color: lightgoldenrodyellow
+}
+
+/* attribute selectors */
+a[href]{
+    background-color: #3dd13d
+}
+
+/* Things that match this exactly will be styled this way */
+a[href="https://www.google.com"]{
+    background-color: darkorange;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Things that include _____ will be styled this way */
+a[href*="about"]{
+    font-weight: lighter;
+}
+
+/* things that end in ____ will be styled this way */
+a[href$=".com"]{
+    font-weight:300;
+}
+
+/* Cascading */
+/*           */
+/*   CSS uses the idea of cascading. In other words, styling a div will also style things inside it like p tags and span tags in those p tags.    */
+/* Most things related to styling the font are inherited, but not things like border (unless explicitly stated). */
+/*  */
+/*  */
+
+/* Example:
+div{
+    color: lightcoral;
+    border: 1px solid grey;
+    margin: 40px;
+    font-weight: bold;
+}
+p{
+    border: inherit;
+    margin: inherit;
+    color: crimson;
+} */
